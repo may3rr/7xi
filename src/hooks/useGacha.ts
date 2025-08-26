@@ -38,7 +38,7 @@ export const useGacha = () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   }, [state]);
 
-  const updateStats = useCallback((newCards: Card[], currentStats = state.stats, currentPityCount = state.pityCount) => {
+  const updateStats = useCallback((newCards: Card[], currentStats = state.stats) => {
     let stats = { ...currentStats };
     stats.totalPulls += newCards.length;
 
@@ -61,7 +61,7 @@ export const useGacha = () => {
     });
 
     return stats;
-  }, [state.stats, state.pityCount]);
+  }, []);
 
   const pullSingle = useCallback(async () => {
     setIsLoading(true);

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Card as CardType, Rarity } from '../types';
+import type { Card as CardType } from '../types';
 import { RARITY_CONFIG } from '../data/cards';
 
 interface CardProps {

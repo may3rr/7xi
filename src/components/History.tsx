@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import type { GachaResult } from '../types';
-import { RARITY_CONFIG } from '../data/cards';
 
 interface HistoryProps {
   results: GachaResult[];

@@ -1,4 +1,4 @@
-import { Card } from '../types';
+import type { Card } from '../types';
 
 export const CARDS_DATA: Card[] = [
   // SSR 卡片 (1%概率)

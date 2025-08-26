@@ -1,4 +1,4 @@
-import { Card, Rarity } from '../types';
+import type { Card, Rarity } from '../types';
 import { CARDS_DATA, RARITY_CONFIG } from '../data/cards';
 
 const PITY_THRESHOLD = 90;
